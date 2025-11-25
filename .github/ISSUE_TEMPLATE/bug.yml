@@ -15,22 +15,31 @@ body:
   - type: dropdown
     id: feature
     attributes:
-      label: "Feature / Area"
-      description: "Which feature or area is affected?"
+      label: "Feature"
+      description: "Which feature affected?"
       options:
-        - "Worktrack"
-        - "Feedback"
+        - "Home"
         - "Dashboard"
-        - "User management"
+        - "User"
+        - "Unit"
+        - "Worktrack"
+        - "Feedback"   
+        - "Billing"
+        - "Package"
+        - "Visitor"
+        - "Inventory"
         - "Notifications"
-        - "Payments"
-        - "Other"
+        - "Profile"
+        - "Team Chat"
+        - "Chat Bot
+        - "My Work"
+        - "General"      
   - type: input
     id: version
     attributes:
       label: "App version"
-      description: "Example: 1.2.3 or build 20251124"
-      placeholder: "e.g. 1.2.3"
+      description: "Example: 1.0.3"
+      placeholder: "e.g. 1.0.3"
   - type: dropdown
     id: platform
     attributes:
@@ -38,19 +47,18 @@ body:
       options:
         - "Android"
         - "iOS"
-        - "Web"
-        - "Other"
+        - "Web"        
   - type: input
     id: device
     attributes:
-      label: "Device / OS"
-      description: "Device model and OS version (optional)"
-      placeholder: "e.g. Samsung A12 / Android 13"
+      label: "OS"
+      description: "OS version (optional)"
+      placeholder: "e.g. Android 13"
   - type: textarea
     id: steps
     attributes:
-      label: "Steps to reproduce"
-      description: "Describe step-by-step how to reproduce the bug."
+      label: "Bug Description"
+      description: "You can describe how to reproduce the bug"
       placeholder: |
         1. Go to ...
         2. Tap ...
@@ -61,22 +69,13 @@ body:
       label: "Expected result"
       description: "What did you expect to happen?"
   - type: textarea
-    id: actual
-    attributes:
-      label: "Actual result / Error message"
-      description: "What actually happened? Include error messages if any."
-  - type: textarea
     id: attachments
     attributes:
       label: "Attachments (screenshots / videos)"
       description: |
-        Upload images/videos after submitting the issue OR paste links here.
-      placeholder: |
-        Example:
-        Screenshot: https://...
-        Video: https://...
+        Upload images/videos with full screen.
   - type: input
     id: reporter_email
     attributes:
-      label: "Reporter email (optional)"
-      description: "If you'd like a follow-up, enter email"
+      label: "Reporter email"
+      description: "Enter your email"
