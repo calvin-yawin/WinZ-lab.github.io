@@ -1,15 +1,17 @@
 name: "🐞 Bug Report"
-description: "Report a bug with as much detail as you can. Please attach screenshots or logs if available."
+description: "Report a bug with as much detail as possible. Please attach screenshots or logs if available."
 title: "[Bug] Report Bug Form"
 labels: ["bug"]
 assignees: []
+
 body:
   - type: input
     id: email
     attributes:
-      label: Email Address
+      label: "Email Address"
     validations:
       required: true
+
   - type: dropdown
     id: app
     attributes:
@@ -17,8 +19,9 @@ body:
       options:
         - "Nextlivin Manage"
         - "Nextlivin Tenant"
-      validations:
+    validations:
       required: true
+
   - type: dropdown
     id: feature
     attributes:
@@ -29,7 +32,7 @@ body:
         - "User"
         - "Unit"
         - "Worktrack"
-        - "Feedback"   
+        - "Feedback"
         - "Billing"
         - "Package"
         - "Visitor"
@@ -39,16 +42,18 @@ body:
         - "Team Chat"
         - "Chat Bot"
         - "My Work"
-        - "General"  
-      validations:
+        - "General"
+    validations:
       required: true
+
   - type: input
     id: version
     attributes:
       label: "App version"
       placeholder: "e.g. 1.0.3"
-      validations:
+    validations:
       required: true
+
   - type: dropdown
     id: platform
     attributes:
@@ -56,16 +61,18 @@ body:
       options:
         - "Android"
         - "iOS"
-        - "Web" 
-      validations:
+        - "Web"
+    validations:
       required: true
+
   - type: input
     id: device
     attributes:
       label: "OS"
-      placeholder: "e.g. Android 13"
-      validations:
+      placeholder: "e.g. Android 13 or iOS 17"
+    validations:
       required: true
+
   - type: textarea
     id: steps
     attributes:
@@ -74,13 +81,15 @@ body:
         1. Go to ...
         2. Tap ...
         3. Observe ...
+
   - type: textarea
     id: expected
     attributes:
       label: "Expected result"
+
   - type: textarea
     id: attachments
     attributes:
       label: "Attachments (screenshots / videos)"
       description: |
-        Upload images/videos with app full screen.
+        Upload images/videos with full screen.
